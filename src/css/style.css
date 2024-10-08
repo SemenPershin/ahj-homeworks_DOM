@@ -3,14 +3,53 @@
 }
 
 body {
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 100px;
 
   height: 100vh;
 
   margin: 0;
   padding: 0;
+}
+
+.lose_screen {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(26, 25, 25, 0.836);
+
+  color: white;
+  font-size: 40px;
+}
+
+.game_menu {
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.score, .misses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  aspect-ratio: 2.5;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  font-size: 40px;
 }
 
 .game_field {
@@ -27,4 +66,8 @@ body {
 .goblin {
   width: var(--box-size);
   aspect-ratio: 1;
+}
+
+.hide {
+  display: none;
 }
