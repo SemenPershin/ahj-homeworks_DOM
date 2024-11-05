@@ -19,8 +19,8 @@ export class GoblinGame {
 
         this.gameStart = setInterval(() => {
             let shift = Math.ceil(Math.random() * 14);
-            if (this.currentPosition + shift > 14) {
-                this.currentPosition = this.currentPosition + shift - 14
+            if (this.currentPosition + shift > 15) {
+                this.currentPosition = this.currentPosition + shift - 15
             } else {
                 this.currentPosition = this.currentPosition + shift
             }
